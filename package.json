@@ -1,0 +1,24 @@
+{
+  "name": "adventofcode2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha 'src/**/*.spec.js'",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domrein/adventofcode2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domrein/adventofcode2021/issues"
+  },
+  "homepage": "https://github.com/domrein/adventofcode2021#readme",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}
