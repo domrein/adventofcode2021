@@ -13,4 +13,12 @@ export default {
   sum(arr) {
     return arr.reduce((p, c) => p + c, 0);
   },
+
+  min(arr) {
+    return arr.reduce((a, c) => Math.min(a, c));
+  },
+
+  max(arr) {
+    return arr.reduce((a, c) => Math.max(a, c));
+  }
 }
