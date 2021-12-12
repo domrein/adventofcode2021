@@ -6,8 +6,14 @@ export default {
     const file = await fs.open(path.join(process.cwd(), "src", ...filePath));
     const contents = (await file.readFile()).toString();
     await file.close();
+    const lines = contents.split(/\n/).filter(l => l.trim() !== "");
 
-    return contents.split(/\n/).filter(l => l.trim() !== "");
+    if (!lines.length) {
+      console.error("No lines to process");
+      process.exit(1);
+    }
+
+    return lines;
   },
 
   sum(arr) {
