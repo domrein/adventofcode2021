@@ -2,7 +2,7 @@ import assert from "node:assert";
 
 import module from "./part1.js";
 
-describe("Day 11 Part 1 module", function() {
+describe("Day 12 Part 1 module", function() {
   describe("#processData", function () {
     it("should return path count given raw data", function() {
       const pathCount = module.processData([
