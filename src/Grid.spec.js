@@ -277,4 +277,33 @@ describe("Grid", function() {
       ]);
     });
   });
+  describe("#getRow", function() {
+    it("should return all values in row for index 0", function() {
+      const grid = new Grid(2, 3, [
+        0, 1,
+        2, 3,
+        0, 2,
+      ]);
+
+      const row = grid.getRow(0);
+      assert.deepStrictEqual(row, [
+        {value: 0, index: 0},
+        {value: 1, index: 1},
+      ]);
+    });
+
+    it("should return all values in row for index 1", function() {
+      const grid = new Grid(2, 3, [
+        0, 1,
+        2, 3,
+        0, 2,
+      ]);
+
+      const row = grid.getRow(1);
+      assert.deepStrictEqual(row, [
+        {value: 2, index: 2},
+        {value: 3, index: 3},
+      ]);
+    });
+  });
 });

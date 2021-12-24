@@ -108,4 +108,14 @@ export default class Grid {
 
     return results;
   }
+
+  getRow(index) {
+    const results = [];
+    for (let i = 0; i < this.width; i++) {
+      const rowIndex = i + index * this.width;
+      results.push({value: this.values[rowIndex], index: rowIndex});
+    }
+
+    return results;
+  }
 }
